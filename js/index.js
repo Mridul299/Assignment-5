@@ -79,4 +79,19 @@ document.getElementById("donate-students").addEventListener('click',function(){
     }
 });
 
+// history
+
+document.getElementById('btn-donation').addEventListener('click',function(){
+    showSection('donate-container');
+    backgroundColor('btn-donation');
+   
+   
+});
+
+document.getElementById('btn-history').addEventListener('click',function(){
+    showSection('history-container');
+    backgroundColor('btn-history');
+   
+});
+
 
