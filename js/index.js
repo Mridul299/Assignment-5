@@ -1,3 +1,11 @@
+document.getElementById("blog-btn").addEventListener('click',function(){
+    window.location.href = "./blog.html";
+});
+
+document.getElementById("btn-home").addEventListener('click',function(){
+    window.location.href = "./index.html";
+});
+
 document.getElementById('donate-noakhali').addEventListener('click',function(){
     const totaldonated = accountbalance('donate-amount');
     const donatevalue =  inputvalue("donate-value");
@@ -137,5 +145,6 @@ document.getElementById('btn-history').addEventListener('click',function(){
     showSection('history-container');
     backgroundColor('btn-history');  
 });
+
 
 
