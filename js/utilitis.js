@@ -21,3 +21,6 @@ function showSection(id){
     document.getElementById(id).classList.remove('bg-white');
     document.getElementById(id).classList.add('bg-[#B4F461]');
  };
+ document.getElementById("btn-home").addEventListener('click',function(){
+    window.location.href = "./index.html";
+});
