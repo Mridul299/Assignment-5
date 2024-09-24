@@ -15,14 +15,20 @@ document.getElementById('donate-noakhali').addEventListener('click',function(){
             document.getElementById('my-balance').innerText = availablebalance;              
         };
         document.getElementById("donate-amount").innerText = donatedbalance;
-        modal.showModal();         
+        modal.showModal();   
+        const div = document.createElement('div');
+        div.innerHTML = `
+        <div class="border-2 p-8 max-w-6xl m-auto rounded-2xl">
+            <h1 class="font-bold">${donatevalue} Taka is Donated for Flood Relief in Noakhali,Bangladesh</h1>
+            <p class="text-slate-700"> Date : ${Date()} </p>
+        </div>
+        `;
+        document.getElementById('history-container').appendChild(div);      
     }
     else{
         alert('please input valid value');
     }
 });
-
-
 
 document.getElementById("donate-feni").addEventListener('click',function(){
     const totaldonated = accountbalance('donate-amount-1');
@@ -41,15 +47,20 @@ document.getElementById("donate-feni").addEventListener('click',function(){
             document.getElementById('my-balance').innerText = availablebalance;               
         };   
         document.getElementById('donate-amount-1').innerText = donatedbalance; 
-        modal.showModal();    
+        modal.showModal(); 
+        const div = document.createElement('div');
+        div.innerHTML = `
+        <div class="border-2 p-8 max-w-6xl m-auto rounded-2xl">
+            <h1 class="font-bold">${donatevalue} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+            <p class="text-slate-700"> Date : ${Date()} </p>
+        </div>
+        `;
+        document.getElementById('history-container').appendChild(div);    
     }
     else{
         alert('please input valid value');
     }
 });
-
-
-
 
 document.getElementById("donate-students").addEventListener('click',function(){
     const totaldonated = accountbalance('donate-amount-2');
@@ -72,7 +83,15 @@ document.getElementById("donate-students").addEventListener('click',function(){
             document.getElementById('my-balance').innerText = availablebalance;             
         };
         document.getElementById('donate-amount-2').innerText = donatedbalance;
-        modal.showModal();     
+        modal.showModal();
+        const div = document.createElement('div');
+        div.innerHTML = `
+        <div class="border-2 p-8 max-w-6xl m-auto rounded-2xl">
+            <h1 class="font-bold">${donatevalue} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
+            <p class="text-slate-700"> Date : ${Date()} </p>
+        </div>
+        `;
+        document.getElementById('history-container').appendChild(div);      
     }
     else{
         alert('please input valid value');
@@ -83,15 +102,12 @@ document.getElementById("donate-students").addEventListener('click',function(){
 
 document.getElementById('btn-donation').addEventListener('click',function(){
     showSection('donate-container');
-    backgroundColor('btn-donation');
-   
-   
+    backgroundColor('btn-donation');   
 });
 
 document.getElementById('btn-history').addEventListener('click',function(){
     showSection('history-container');
-    backgroundColor('btn-history');
-   
+    backgroundColor('btn-history');  
 });
 
 
