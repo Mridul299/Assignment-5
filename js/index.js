@@ -115,7 +115,7 @@ document.getElementById("donate-palestine").addEventListener('click',function(){
         const div = document.createElement('div');
         div.innerHTML = `
         <div class="border-2 p-8 max-w-6xl m-auto rounded-2xl">
-            <h1 class="font-bold">${donatevalue} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
+            <h1 class="font-bold">${donatevalue} Taka is Donated for the persecuted Palestinians</h1>
             <p class="text-slate-700"> Date : ${Date()} </p>
         </div>
         `;
